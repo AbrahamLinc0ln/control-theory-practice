@@ -5,8 +5,8 @@
 function [A, filt] = causal_SGFilter(FrameLength, ts)
 % FrameLength = length of filter
 % ts = sample time
-% filter(3,:) = FIR coeffs for derivative of filtered signal
-% filter(2,:) = FIR coeffs for filtered signal
+% filt(2,:) = FIR coeffs for derivative of filtered signal
+% filt(3,:) = FIR coeffs for filtered signal
 % The filter rows can be used directly in a Simulink FIR block
 
 for i = (FrameLength-1):-1:0
