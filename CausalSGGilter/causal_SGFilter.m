@@ -17,3 +17,4 @@ A(3,:) = ones(FrameLength,1);
 A = A';
 
 filt = inv(A'*A)*A';
+end
